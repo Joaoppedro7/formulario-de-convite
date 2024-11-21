@@ -55,8 +55,8 @@
   background-color: var(--brand-light);
   border-radius: 999px;
   outline: 0.4rem solid var(--shape-button);
-  height: 1.75rem;
-  width: 1.75rem;
+  height: 2rem;
+  width: 2rem;
   left: 7px;
   cursor: pointer;
 
