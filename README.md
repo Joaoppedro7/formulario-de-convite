@@ -21,7 +21,6 @@ Durante o desenvolvimento deste projeto, foi estudado conceitos como:
 
 - **Organização e estilização de inputs de formulário utilizando CSS, deixando-os mais bonito e intuitivo**.
 - **Uso de inputs e outros elementos de formulário**.
-- **Aplicação de estilos com CSS**.
 - **Estruturação HTML**.
 
 ## 📞 Contato
