@@ -1,6 +1,6 @@
 # 🎉 Festivite
 
-Este projeto foi desenvolvido durante o curso Fullstack da [Rocketseat], com base nos conhecimentos adquiridos sobre **formulários**.
+Este projeto foi desenvolvido durante o curso Fullstack da Rocketseat, com base nos conhecimentos adquiridos sobre **formulários**.
 
 ## 📜 Descrição
 
