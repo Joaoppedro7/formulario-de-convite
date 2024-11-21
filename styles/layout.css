@@ -1,0 +1,45 @@
+#app {
+  display: grid;
+  grid-template-columns: 31.25% 68.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  background-color: var(--shape-body);
+  padding: 5rem 8.125rem;
+  overflow: auto;
+
+  & .main-container {
+    max-width: 35rem;
+    margin: auto;
+
+    & h2 {
+      font: 700 1.75rem / normal var(--font-heading);
+      color: var(--text-heading);
+    }
+  }
+}
+
+aside {
+  background: url(../assets/Background.png) center/cover;
+  padding: 2rem;
+
+  & .logo-image {
+    width: 2.875rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  & h1 {
+    font: 400 2.5rem / normal "Leckerli One", sans-serif;
+    color: #ff598b;
+  }
+
+  & p {
+    font: 300 1rem / normal var(--font-primary);
+    color: var(--text-heading);
+  }
+}
+

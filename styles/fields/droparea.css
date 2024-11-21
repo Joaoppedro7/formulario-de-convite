@@ -1,0 +1,35 @@
+.dropzone {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+  padding-top: 0.45rem;
+
+  & input {
+    all: unset;
+
+    &::file-selector-button {
+      display: none;
+    }
+  }
+}
+
+.upload-file {
+  display: flex;
+  gap: 0.5rem;
+  background-color: var(--shape-button);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+  & .select {
+    font: 600 0.875rem / normal var(--font-primary);
+    color: var(--text-heading);
+  }
+  & .icon-upload {
+    width: 1rem;
+    height: 1rem;
+  }
+}

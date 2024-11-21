@@ -1,0 +1,155 @@
+.radio-inner {
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  &:has(:checked) {
+    background-color: var(--shape-hover);
+    border-radius: 0.25rem;
+
+    & label {
+      font: 600 0.875rem / normal var(--font-primary);
+      color: var(--text-heading);
+    }
+
+    & svg path {
+      fill: var(--brand-light);
+    }
+  }
+
+  & label {
+    margin-top: 0.7rem;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.radio-color {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  margin-top: 1rem;
+}
+
+.color-inner {
+  position: relative;
+  background-color: var(--brand-light);
+  border-radius: 999px;
+  outline: 0.4rem solid var(--shape-button);
+  height: 1.75rem;
+  width: 1.75rem;
+  left: 7px;
+  cursor: pointer;
+
+  &:nth-child(2) {
+    background-color: #6a59ff;
+  }
+  &:nth-child(3) {
+    background-color: #b259ff;
+  }
+  &:nth-child(4) {
+    background-color: #ff59f9;
+  }
+  &:nth-child(5) {
+    background-color: #ff598b;
+  }
+  &:nth-child(6) {
+    background-color: #ff5959;
+  }
+  &:nth-child(7) {
+    background-color: #ff8b59;
+  }
+  &:nth-child(8) {
+    background-color: #ffcd59;
+  }
+  &:nth-child(9) {
+    background-color: #e1ff59;
+  }
+  &:nth-child(10) {
+    background-color: #59ff91;
+  }
+  &:nth-child(11) {
+    background-color: #59fff9;
+  }
+  &:hover {
+    border-radius: 999px;
+    outline: 0.4rem solid var(--shape-hover);
+  }
+  &:has(:checked)::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 999px;
+    border: 0.4rem solid var(--shape-hover);
+    outline: 2px solid var(--brand-light);
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.event-themes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.themes {
+  position: relative;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--shape-button);
+  text-align: center;
+  padding-inline: 0.25rem;
+  padding-top: 0.25rem;
+  cursor: pointer;
+
+  &:has(:checked) {
+    border: 2px solid var(--brand-light);
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--shape-hover);
+  }
+
+  & label {
+    margin-block: 0.5rem;
+    color: var(--text-heading);
+  }
+
+  & input,
+  & input:hover,
+  & input:focus {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+}

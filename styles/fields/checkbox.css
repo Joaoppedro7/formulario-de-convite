@@ -1,0 +1,105 @@
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.75rem;
+
+  & input {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    height: 2rem;
+    width: 4rem;
+    cursor: pointer;
+  }
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    margin-left: 4.75rem;
+    margin-top: 0.4rem;
+  }
+  & .toogle-style {
+    position: absolute;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    height: 2rem;
+    width: 4rem;
+    top: 0;
+    left: 0;
+    border-radius: 999px;
+    inset: 0;
+    transition: background-color 0.3s ease-in;
+  }
+
+  & .toogle-style::before {
+    content: "";
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--input-stroke);
+    top: 3.2px;
+    left: 3px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+  & input:checked + .toogle-style {
+    background-color: var(--brand-light);
+  }
+  & input:checked + .toogle-style::before {
+    background-color: #fff;
+    transform: translateX(31px);
+  }
+
+  & input:checked ~ label {
+    visibility: hidden;
+  }
+
+  & input:checked ~ .clear::before {
+    content: "Claro";
+    position: absolute;
+    margin-left: 4.75rem;
+    margin-top: -31px;
+    font: var(--body-sm);
+    color: var(--text-heading);
+    transition: transform 0.3s;
+  }
+}
+
+.checkbox-wrapper {
+  margin-top: 3rem;
+}
+
+.terms-wrapper {
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--input-stroke);
+}
+
+.terms-conditions {
+  display: flex;
+  gap: 0.75rem;
+  position: relative;
+  cursor: pointer;
+
+  & a {
+    font-weight: 600;
+    color: var(--brand-light);
+  }
+
+  & input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  & .checkbox-image {
+    background-image: url(../../assets/icons/checkbox.svg);
+    background-repeat: no-repeat;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  &:has(:checked) .checkbox-image {
+    background-image: url(../../assets/icons/checked.svg);
+  }
+}
