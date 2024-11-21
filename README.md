@@ -19,8 +19,8 @@ O **Festivite** permite criar convites de festas com diversas opções de person
 ## 💡 Aprendizados
 Durante o desenvolvimento deste projeto, foi estudado conceitos como:
 
-- **Organização e estilização de  inputs de formulário utilizando CSS, deixando-os mais bonito e intuitivo**.
-- **Uso de inputs, buttons e outros elementos de formulário**.
+- **Organização e estilização de inputs de formulário utilizando CSS, deixando-os mais bonito e intuitivo**.
+- **Uso de inputs e outros elementos de formulário**.
 - **Aplicação de estilos com CSS**.
 - **Estruturação HTML**.
 
