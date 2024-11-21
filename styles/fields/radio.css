@@ -47,7 +47,7 @@
 .radio-color {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  margin-top: 1rem;
+  padding-block: 1rem 1.75rem;
 }
 
 .color-inner {
