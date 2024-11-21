@@ -17,12 +17,12 @@ O **Festivite** permite criar convites de festas com diversas opções de person
 - **CSS3**: para estilização e layout.
 
 ## 💡 Aprendizados
-Durante o desenvolvimento deste projeto, foram explorados conceitos como:
+Durante o desenvolvimento deste projeto, foi estudado conceitos como:
 
-- **Organização e estilização dos inputs de um formulário usando CSS, deixando-os mais bonito e intuitivo**.
+- **Organização e estilização de  inputs de formulário utilizando CSS, deixando-os mais bonito e intuitivo**.
 - **Uso de inputs, buttons e outros elementos de formulário**.
 - **Aplicação de estilos com CSS**.
-- **Estruturação de páginas HTML**.
+- **Estruturação HTML**.
 
 ## 📞 Contato
 Projeto feito por @Joaoppedro7.
